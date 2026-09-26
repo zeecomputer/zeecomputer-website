@@ -19,22 +19,60 @@
 </header>
 
 <main id="home">
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">YOUR TRUSTED TECH PARTNER</p>
-      <h1>Upgrade Your <span>World.</span><br>Upgrade Your <span>Tech.</span></h1>
-      <p class="hero-text">Computers, laptops, printers, CCTV, Apple products and reliable IT services — all under one roof in Duliajan.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#products">Explore Products</a>
-        <a class="btn outline" href="https://wa.me/917002213308?text=Hello%20ZEE%20COMPUTER%2C%20I%20want%20to%20know%20about%20your%20products." target="_blank">WhatsApp Us</a>
-      </div>
-      <div class="trust-row"><span>✓ Genuine Products</span><span>✓ Expert Support</span><span>✓ After-Sales Service</span></div>
+<style>
+  .homepage-poster-wrap{background:#fff;padding:0;margin:0;}
+  .homepage-poster{display:block;width:100%;height:auto;margin:0 auto;}
+  .quick-launch{background:linear-gradient(180deg,#eef8ff 0%,#ffffff 100%);padding:28px 0 34px;border-top:1px solid #e6eef7;}
+  .quick-launch .section-head{margin-bottom:18px;}
+  .quick-launch h2{margin-bottom:6px;}
+  .quick-launch-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .quick-launch-btn{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border:1px solid #dce7f2;border-radius:14px;padding:16px 18px;text-decoration:none;box-shadow:0 5px 18px rgba(0,35,80,.08);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;}
+  .quick-launch-btn:hover{transform:translateY(-3px);box-shadow:0 9px 24px rgba(0,35,80,.14);border-color:#f04a23;}
+  .quick-launch-btn .ql-left{display:flex;align-items:center;gap:12px;}
+  .quick-launch-btn .ql-icon{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:#f3f7fc;font-size:22px;}
+  .quick-launch-btn strong{display:block;color:#0b2d5b;font-size:15px;}
+  .quick-launch-btn small{display:block;color:#65748a;margin-top:2px;font-size:12px;}
+  .quick-launch-btn .arrow{width:30px;height:30px;border-radius:50%;background:#f04a23;color:#fff;display:grid;place-items:center;font-weight:700;}
+  @media(max-width:900px){.quick-launch-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.quick-launch{padding:20px 0 24px}.quick-launch-grid{grid-template-columns:1fr;gap:10px}.quick-launch-btn{padding:13px 14px}.quick-launch-btn .ql-icon{width:38px;height:38px}}
+</style>
+
+<section class="homepage-poster-wrap" aria-label="ZEE COMPUTER homepage poster">
+  <img class="homepage-poster" src="home-poster.png" alt="ZEE COMPUTER - Upgrade Your World. Upgrade Your Tech.">
+</section>
+
+<section class="quick-launch" aria-label="Quick Launch">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">QUICK LAUNCH</p>
+      <h2>Find What You Need</h2>
+      <p>Jump directly to the relevant section of our website.</p>
     </div>
-    <div class="hero-card">
-      <div class="device desktop"><div class="screen">ZEE<br><b>COMPUTER</b></div><div class="stand"></div></div>
-      <div class="device laptop"><div class="lap-screen">Work • Create • Play</div><div class="lap-base"></div></div>
-      <div class="floating-card"><b>Complete IT Solutions</b><small>Sales • Service • Solutions</small></div>
+    <div class="quick-launch-grid">
+      <a class="quick-launch-btn" href="#laptops">
+        <span class="ql-left"><span class="ql-icon">💻</span><span><strong>Laptops</strong><small>Work • Study • Gaming</small></span></span><span class="arrow">→</span>
+      </a>
+      <a class="quick-launch-btn" href="#desktops">
+        <span class="ql-left"><span class="ql-icon">🖥️</span><span><strong>Desktops</strong><small>Home • Business • Gaming</small></span></span><span class="arrow">→</span>
+      </a>
+      <a class="quick-launch-btn" href="#printers">
+        <span class="ql-left"><span class="ql-icon">🖨️</span><span><strong>Printers</strong><small>Printers • Ink • Toner</small></span></span><span class="arrow">→</span>
+      </a>
+      <a class="quick-launch-btn" href="#cctv">
+        <span class="ql-left"><span class="ql-icon">📹</span><span><strong>CCTV &amp; Security</strong><small>Home • Shop • Office</small></span></span><span class="arrow">→</span>
+      </a>
+      <a class="quick-launch-btn" href="#accessories">
+        <span class="ql-left"><span class="ql-icon">🎧</span><span><strong>Accessories</strong><small>All Your Computing Needs</small></span></span><span class="arrow">→</span>
+      </a>
+      <a class="quick-launch-btn" href="#services">
+        <span class="ql-left"><span class="ql-icon">🔧</span><span><strong>Sales &amp; Service</strong><small>Expert Local Support</small></span></span><span class="arrow">→</span>
+      </a>
+      <a class="quick-launch-btn" href="#offers">
+        <span class="ql-left"><span class="ql-icon">🔥</span><span><strong>Offers</strong><small>Latest Deals &amp; Promotions</small></span></span><span class="arrow">→</span>
+      </a>
+      <a class="quick-launch-btn" href="#contact">
+        <span class="ql-left"><span class="ql-icon">📞</span><span><strong>Contact Us</strong><small>Call • WhatsApp • Visit</small></span></span><span class="arrow">→</span>
+      </a>
     </div>
   </div>
 </section>
@@ -43,12 +81,12 @@
   <div class="container">
     <div class="section-head"><p class="eyebrow">WHAT WE OFFER</p><h2>Everything You Need for Your Tech Life</h2><p>Quality products, practical advice and dependable local support.</p></div>
     <div class="card-grid">
-      <article class="product-card"><div class="icon">💻</div><h3>Laptops & Computers</h3><p>New and refurbished laptops, desktops and custom PC solutions.</p><a href="#contact">Enquire →</a></article>
-      <article class="product-card"><div class="icon">🖨️</div><h3>Printers & Ink</h3><p>Canon, HP, Epson and Brother printers, cartridges, inks and toners.</p><a href="#contact">Enquire →</a></article>
-      <article class="product-card"><div class="icon">📹</div><h3>CCTV & Security</h3><p>CP PLUS and other security solutions for homes, shops and offices.</p><a href="#contact">Enquire →</a></article>
+      <article class="product-card" id="laptops"><div class="icon">💻</div><h3>Laptops &amp; Computers</h3><p>New and refurbished laptops, desktops and custom PC solutions.</p><a href="#contact">Enquire →</a></article>
+      <article class="product-card" id="printers"><div class="icon">🖨️</div><h3>Printers &amp; Ink</h3><p>Canon, HP, Epson and Brother printers, cartridges, inks and toners.</p><a href="#contact">Enquire →</a></article>
+      <article class="product-card" id="cctv"><div class="icon">📹</div><h3>CCTV &amp; Security</h3><p>CP PLUS and other security solutions for homes, shops and offices.</p><a href="#contact">Enquire →</a></article>
       <article class="product-card"><div class="icon"></div><h3>Apple Products</h3><p>iPhone, iPad, MacBook and Apple accessories — coming to our store.</p><a href="#contact">Enquire →</a></article>
-      <article class="product-card"><div class="icon">🖥️</div><h3>Monitors & Accessories</h3><p>Monitors, keyboards, mice, storage, networking and essential accessories.</p><a href="#contact">Enquire →</a></article>
-      <article class="product-card"><div class="icon">🛠️</div><h3>IT Services</h3><p>Computer service, upgrades, troubleshooting, installation and support.</p><a href="#services">Our Services →</a></article>
+      <article class="product-card" id="accessories"><div class="icon">🖥️</div><h3>Monitors &amp; Accessories</h3><p>Monitors, keyboards, mice, storage, networking and essential accessories.</p><a href="#contact">Enquire →</a></article>
+      <article class="product-card" id="desktops"><div class="icon">🎮</div><h3>Desktops &amp; Gaming PCs</h3><p>Desktop computers, gaming systems and custom PC solutions.</p><a href="#contact">Enquire →</a></article>
     </div>
   </div>
 </section>
@@ -58,7 +96,7 @@
     <div><p class="eyebrow">WHY ZEE COMPUTER</p><h2>Technology. People. Possibilities.</h2><p>We help students, professionals, families and businesses choose the right technology for their needs and budget.</p>
       <ul class="checks"><li>Quality checked products</li><li>Competitive prices</li><li>Expert guidance before purchase</li><li>Reliable after-sales support</li></ul>
     </div>
-    <div class="offer-box" id="offers"><span>OFFERS & DEALS</span><h3>Easy<br><b>NO COST EMI</b></h3><p>Ask us about current laptop, printer, CCTV and Apple offers.</p><a class="btn light" href="https://wa.me/917002213308" target="_blank">Ask on WhatsApp</a></div>
+    <div class="offer-box" id="offers"><span>OFFERS &amp; DEALS</span><h3>Easy<br><b>NO COST EMI</b></h3><p>Ask us about current laptop, printer, CCTV and Apple offers.</p><a class="btn light" href="https://wa.me/917002213308" target="_blank">Ask on WhatsApp</a></div>
   </div>
 </section>
 
